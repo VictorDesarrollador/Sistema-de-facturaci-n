@@ -7,7 +7,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-gray-800 text-white">
+    <nav className="bg-gray-800  text-white">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         {/* Logo */}
         <Link href="/" className="text-xl font-bold flex items-center">
@@ -17,9 +17,9 @@ export default function Navbar() {
 
         {/* Menú para pantallas grandes */}
         <div className="hidden md:flex space-x-6">
-          <Link href="/" className="hover:text-gray-400">Inicio</Link>
-          <Link href="/about" className="hover:text-gray-400">Nosotros</Link>
-          <Link href="/contact" className="hover:text-gray-400">Contacto</Link>
+          <Link href="/" className="hover:text-gray-400 hover:bg-gray-700 rounded px-2 py-1">Inicio</Link>
+          <Link href="/about" className="hover:text-gray-400 hover:bg-gray-700 rounded px-2 py-1">Nosotros</Link>
+          <Link href="/contact" className="hover:text-gray-400 hover:bg-gray-700 rounded px-2 py-1">Contacto</Link>
         </div>
 
         {/* Menú responsive */}
